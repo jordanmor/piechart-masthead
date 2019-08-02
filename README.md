@@ -15,3 +15,5 @@ CSS
 For this assignment, attention was placed on producing clear, readable CSS code by adhering to the DRY principle.  
 
 Another personal goal was to utilize CSS Grid and CSS Flexbox to achieve proper placement of elements on the page, as well as CSS variables to achieve better code maintainability.
+
+Finally, I wanted to have some fun creating an CSS animation on the pie chart
