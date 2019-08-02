@@ -59,12 +59,12 @@ header {
 
 /* --- Navbar --- */
 
-.wrapper-nav {
+header .wrapper {
   display: flex;
   height: 100%;
 }
 
-.logo {
+header .logo {
   display: flex;
   align-items: center;
   font-size: 2.4rem;
@@ -97,19 +97,19 @@ nav li a {
 
 /* --- Search --- */
 
-.search {
+.search-bar {
   display: flex;
   align-self: center;
   margin-left: 3rem;
 }
 
-.search input {
+.search-bar input {
   height: 100%;
   font-size: 1.5rem;
   padding: 0 .5rem;
 }
 
-.search-icon {
+.search-bar img {
   background-color: var(--primary-color-1);
   padding: .25rem;
 }
@@ -143,12 +143,12 @@ nav li a {
                        PIE CHART
 ==============-============-============-==========*/
 
-.pie-chart {
+main {
   display: flex;
   justify-content: center;
 }
 
-.pie-chart .container {
+.pie-chart {
   display: grid;
   grid-template-columns: var(--box-width) var(--box-width);
   grid-template-rows: var(--box-height) var(--box-height);
@@ -167,52 +167,52 @@ nav li a {
   transition: transform .3s ease-out;
 }
 
-.box.one,
-.box.two {
+.box.top-left,
+.box.top-right {
   padding-top: 3rem;
 }
 
-.box.three,
-.box.four {
+.box.bottom-left,
+.box.bottom-right {
   padding-bottom: 3rem;
 }
 
-.box.one,
-.box.three {
+.box.top-left,
+.box.bottom-left {
   padding-left: 1.5rem;
 }
 
-.box.two,
-.box.four {
+.box.top-right,
+.box.bottom-right {
   padding-right: 1.5rem;
 }
 
-.box.one {
+.box.top-left {
   border-top-left-radius: 100%;
   background-color: var(--primary-color-1);
 }
-.box.two {
+.box.top-right {
   border-top-right-radius: 100%;
   background-color: var(--primary-color-2);
 }
-.box.three {
+.box.bottom-left {
   border-bottom-left-radius: 100%;
   background-color: var(--primary-color-3);
 }
-.box.four {
+.box.bottom-right {
   border-bottom-right-radius: 100%;
   background-color: var(--primary-color-4);
 }
 
-.box.one:hover {
+.box.top-left:hover {
   transform: translate(-4px, -4px);
 }
-.box.two:hover {
+.box.top-right:hover {
   transform: translate(4px, -4px);
 }
-.box.three:hover {
+.box.bottom-left:hover {
   transform: translate(-4px, 4px);
 }
-.box.four:hover {
+.box.bottom-right:hover {
   transform: translate(4px, 4px);
 }
