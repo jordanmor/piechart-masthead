@@ -8,8 +8,9 @@
   --primary-color-3: #00688B;
   --primary-color-4: #3D9140;
   --off-white: #fafafa;
-  --box-width: 200px;
-  --box-height: 200px;
+  --box-width: 15rem;
+  --box-height: 15rem;
+  --box-padding: 3rem;
 }
 
 /*============-============-============-============
@@ -59,18 +60,33 @@ header {
 
 /* --- Navbar --- */
 
-header .wrapper {
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.navbar .container{
   display: flex;
   height: 100%;
 }
 
-header .logo {
+.navbar .logo {
   display: flex;
   align-items: center;
-  font-size: 2.4rem;
-  background-color: var(--primary-color-1);
   height: 100%;
+  font-size: 2.4rem;
   padding: 0 .5rem .25rem;
+  background-color: var(--primary-color-1);
+}
+
+.navbar a {
+  transition: color .3s ease-out;
+}
+
+.navbar a:hover {
+  color: #00688B;
 }
 
 nav {
@@ -119,6 +135,7 @@ nav li a {
 .sign-in {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-right: 1.5rem;
   text-transform: uppercase;
 }
@@ -131,7 +148,6 @@ nav li a {
 .cart {
   display: flex;
   align-items: center;
-  align-content: center;
 }
 
 .cart p {
@@ -169,22 +185,22 @@ main {
 
 .box.top-left,
 .box.top-right {
-  padding-top: 3rem;
+  padding-top: var(--box-padding);
 }
 
 .box.bottom-left,
 .box.bottom-right {
-  padding-bottom: 3rem;
+  padding-bottom: var(--box-padding);
 }
 
 .box.top-left,
 .box.bottom-left {
-  padding-left: 1.5rem;
+  padding-left: calc(var(--box-padding) / 2);
 }
 
 .box.top-right,
 .box.bottom-right {
-  padding-right: 1.5rem;
+  padding-right: calc(var(--box-padding) / 2);
 }
 
 .box.top-left {
